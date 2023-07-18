@@ -2,11 +2,6 @@ import { BsThreeDots } from 'react-icons/bs';
 import style from './Main.module.css';
 
 export function Column({title, tasks}) {
-    const tasksList = [];
-    for (const id of tasks) {
-        tasksList.push(<div className={style.card}>TASK {id}</div>);
-    }
-    
     return (
         <div className={style.column}>
             <div className={style.columnHeader}>
