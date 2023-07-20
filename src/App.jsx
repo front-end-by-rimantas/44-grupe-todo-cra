@@ -8,23 +8,24 @@ function App() {
     {
       id: 1,
       name: 'Andrea',
-      img: 'user1.png',
+      img: 'f5ags41f5f.png',
     },
     {
       id: 2,
       name: 'Karen',
-      img: 'user2.png',
+      img: 'rt58yh45gf.png',
     },
     {
       id: 3,
       name: 'Steve',
-      img: 'user3.png',
+      img: '48jhg56f25.png',
     },
   ];
 
   const data = [
     {
       id: 1,
+      userId: 4,
       stage: 'review',
       tag: 'HTML',
       task: 'Home page',
@@ -40,6 +41,7 @@ function App() {
     },
     {
       id: 2,
+      userId: 2,
       stage: 'done',
       tag: 'CSS',
       task: 'Responsive design',
@@ -48,6 +50,7 @@ function App() {
     },
     {
       id: 3,
+      userId: 3,
       stage: 'done',
       tag: 'HTML',
       task: '404 page',
@@ -56,6 +59,7 @@ function App() {
     },
     {
       id: 4,
+      userId: 1,
       stage: 'progress',
       tag: 'CSS',
       task: 'Basic style css file',
@@ -64,6 +68,7 @@ function App() {
     },
     {
       id: 5,
+      userId: 2,
       stage: 'progress',
       tag: 'JS',
       task: 'Clock js',
@@ -72,6 +77,7 @@ function App() {
     },
     {
       id: 6,
+      userId: 3,
       stage: 'review',
       tag: 'CSS',
       task: 'Clock CSS',
@@ -80,6 +86,7 @@ function App() {
     },
     {
       id: 7,
+      userId: 1,
       stage: 'progress',
       tag: 'HTML',
       task: 'About us page',
@@ -88,6 +95,7 @@ function App() {
     },
     {
       id: 8,
+      userId: 2,
       stage: 'review',
       tag: 'HTML',
       task: 'Services page',
@@ -96,6 +104,7 @@ function App() {
     },
     {
       id: 9,
+      userId: 3,
       stage: 'todo',
       tag: 'CSS',
       task: 'Gallery css',
@@ -104,6 +113,7 @@ function App() {
     },
     {
       id: 10,
+      userId: 1,
       stage: 'todo',
       tag: 'JS',
       task: 'Gallery JS',
@@ -115,7 +125,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Main data={data} />
+      <Main tasksData={data} usersData={users} />
       <Aside data={data} />
     </div>
   );
